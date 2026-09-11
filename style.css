@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(187, 181, 182);
+    /* background-color: rgb(187, 181, 182); */
     font-family: "Poppins", Arial, sans-serif;
     
 }
@@ -73,26 +73,26 @@ h2{
     /* margin-left: 600px; */
     text-align: center;
 }
-/* 640px=40rem */
-@media (width<=40rem){
-  body {
-    background-color: lightgreen;
+
+
+#main-container{
+    display: flex;
     
-  }
-
-  h2{
-    margin-top: 200px;
-    /* margin-left: 600px; */
-    text-align: center;
+}
+#to-do,#in-progress,#completed-tasks{
+    background-color: red;
+    padding: 10px;
 }
 
-.main-container{
-    margin-top: 100px;
+.inner-container{
+    display: flex;
+    /* flex-direction: column; */
 }
-input{
-    font-size: 1rem;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
+.inner-container > h3{
+    background-color: pink;
+    display: block;
 }
+.add-task{
+    /* align-items: center; */
+    margin: 10px 0 10px 0;
 }
