@@ -1,37 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 id="username"></h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="username">Default user</h1>
     <div id="main-container">
-        <div id="to-do">
-            <div class="inner-container">
-                <h3>To do</h3>
-        <button class="number-of-tasks"></button>
+           <!-- --------------------------------------------------------------------- -->
+      <div id="to-do">
+
+        <div class="inner-container">
+          <h3>To do</h3>
+          <h3 class="number-of-tasks">1</h3>
+        </div>
+         
+        <form class="task-form-1 hidden" id="task-form-1">
+            <input type="text" placeholder="enter title">
+            <textarea name="description" id="description" placeholder="description"></textarea>
+              <div id="buttons-div">
+               <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
+            Add Task
+          </button>
+           <button class="close-btn" type="button">Close</button>
             </div>
+        </form>
+
+        <button class="add-task-1" id="add-task-1"></button>
+        <div class="line-break"></div>
+
+         <dialog id="confirm-close-dialog">
+        <form method="dialog">
+          <p class="discard-message-text">Discard unsaved changes?</p>
+          <div class="confirm-close-dialog-btn-container">
+            <button id="cancel-btn" class="btn">
+              Cancel
+            </button>
+            <button id="discard-btn" class="btn">
+              Discard
+            </button>
+          </div>
+        </form>
+      </dialog>
+
+        <div class="task-list">n
+        </div>
+      </div>
+
+
+        <!-- ----------------------------------------------------------------- -->
+      <div id="in-progress">
+        <div class="inner-container">
+           
+          <h3>In Progress</h3>
+          <!-- <button class="number-of-tasks"></button> -->
+           <h3 class="number-of-tasks">1</h3>
+        </div>
+   
+            <form class="task-form-2 hidden" id="task-form-2">
+            <input type="text" placeholder="enter title">
+            <textarea name="description" id="description" placeholder="description"></textarea>
+            <div id="buttons-div">
+               <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
+            Add Task
+          </button>
+           <button class="close-btn" type="button">Close</button>
+            </div>
+            
+        </form>
+ 
+        <button class="add-task-2" id="add-task-2"></button>
+        <div class="line-break"></div>
+
+         <dialog id="confirm-close-dialog">
+        <form method="dialog">
+          <p class="discard-message-text">Discard unsaved changes?</p>
+          <div class="confirm-close-dialog-btn-container">
+            <button id="cancel-btn" class="btn">
+              Cancel
+            </button>
+            <button id="discard-btn" class="btn">
+              Discard
+            </button>
+          </div>
+        </form>
+      </dialog>
+
+        <div class="task-list">n</div>
+      </div>
+
+         <!-- --------------------------------------------------------------------- -->
+      <div id="completed-tasks">
+        <div class="inner-container">
+         
+          <h3>Completed tasks</h3>
+          <!-- <button class="number-of-tasks"></button> -->
+          <h3 class="number-of-tasks">1</h3>
+        </div>
+   
+             <form class="task-form-3 hidden" id="task-form-3">
+            <input type="text" placeholder="enter title">
+            <textarea name="description" id="description" placeholder="description"></textarea>
+           <div id="buttons-div">
+               <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
+            Add Task
+          </button>
+           <button id="close-btn" type="button">Close</button>
+            </div>
+        </form>
+
+        <button class="add-task-3" id="add-task-3"></button>
+        <div class="line-break"></div>
         
-        <button class="add-task"></button>
-        </div>
-        <div id="in-progress">
-            <div class="inner-container">
-                 <h3>In Progress</h3>
-            <button class="number-of-tasks"></button>
-            </div>
-           
-            <button class="add-task"></button>
-        </div>
-        <div id="completed-tasks">
-            <div class="inner-container">
-                 <h3>Completed tasks</h3>
-            <button class="number-of-tasks"></button></div>
-           
-            <button class="add-task"></button>
-        </div>
+         <dialog id="confirm-close-dialog">
+        <form method="dialog">
+          <p class="discard-message-text">Discard unsaved changes?</p>
+          <div class="confirm-close-dialog-btn-container">
+            <button class="cancel-btn" class="btn">
+              Cancel
+            </button>
+            <button id="discard-btn" class="btn">
+              Discard
+            </button>
+          </div>
+        </form>
+      </dialog>
+
+        <div class="task-list">n</div>
+      </div>
     </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

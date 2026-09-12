@@ -25,15 +25,14 @@ input {
     display: block;
     /* width: 300px; */
 
-width: 100%;
-    max-width: 500px;
+
     padding: 12px;
     box-sizing: border-box;
 
-    padding: 12px;
+ 
     margin-top: 15px;
     border-radius: 5px;
-     margin-left: 480px;
+     
     border: 1px solid #888888;
     background-color: white;
     outline: none;
@@ -43,10 +42,10 @@ width: 100%;
 }
 
 button {
-    margin-left: 480px;
+    /* margin-left: 480px; */
     /* width: 325px; */
 
-    width: 100%;
+    
     max-width: 500px;
     padding: 12px;
     box-sizing: border-box;
@@ -54,8 +53,8 @@ button {
     margin-top: 20px;
     padding: 12px;
     border-radius: 5px;
-    border: 1px solid #888888;
-    background-color: #888888;
+    /* border: 1px solid #888888;
+    background-color: #888888; */
     color: white;
     text-align: center;
     cursor: pointer;
@@ -77,11 +76,16 @@ h2{
 
 #main-container{
     display: flex;
+  
     
 }
 #to-do,#in-progress,#completed-tasks{
     background-color: red;
     padding: 10px;
+    margin: 10px;
+    width: 400px;
+    border:1px solid black;
+    border-radius: 5px;
 }
 
 .inner-container{
@@ -92,7 +96,39 @@ h2{
     background-color: pink;
     display: block;
 }
-.add-task{
+.add-task-1,.add-task-2,.add-task-3{
     /* align-items: center; */
     margin: 10px 0 10px 0;
+    background-color: grey;
+}
+.task-list{
+  background-color: blue;
+}
+
+.line-break{
+   height: 1px;
+   background-color: green;
+   margin-bottom: 2px;
+}
+
+.number-of-tasks{
+    background-color: rgb(188, 188, 155);
+    margin-left: 200px;
+}
+
+.hidden{
+    display: none;
+   
+}
+
+#add-or-update-task-btn{
+    margin-right: 120px;
+    /* margin-left: 10px; */
+    /* justify-content: space-between; */
+}
+
+
+#close-btn{
+     margin-left: 120px;
+     
 }
