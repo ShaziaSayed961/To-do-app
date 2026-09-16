@@ -8,31 +8,31 @@ let taskList=document.getElementsByClassName("task-list");
    
 // })}
 let addTaskBtn1=document.getElementById("add-task-1");
-let addTaskBtn2=document.getElementById("add-task-2");
-let addTaskBtn3=document.getElementById("add-task-3");
+// let addTaskBtn2=document.getElementById("add-task-2");
+// let addTaskBtn3=document.getElementById("add-task-3");
 const taskForm1=document.getElementById("task-form-1");
-const taskForm2=document.getElementById("task-form-2");
-const taskForm3=document.getElementById("task-form-3");
+// const taskForm2=document.getElementById("task-form-2");
+// const taskForm3=document.getElementById("task-form-3");
 
 addTaskBtn1.addEventListener("click",()=>{
    taskForm1.classList.toggle("hidden")
 })
 
-addTaskBtn2.addEventListener("click",()=>{
-   taskForm2.classList.toggle("hidden")
-})
+// addTaskBtn2.addEventListener("click",()=>{
+//    taskForm2.classList.toggle("hidden")
+// })
 
-addTaskBtn3.addEventListener("click",()=>{
-   taskForm3.classList.toggle("hidden")
-})
+// addTaskBtn3.addEventListener("click",()=>{
+//    taskForm3.classList.toggle("hidden")
+// })
 
-
+//------------
 // const closeBtn1 = document.getElementById("close-btn-1");
 
 // closeBtn1.addEventListener("click", () => {
 //     taskForm1.classList.add("hidden");
 // });
-
+//-----------------------------
 for (let btn of closeBtn) {
 btn.addEventListener("click", () => {
   confirmCloseDialog.showModal();
